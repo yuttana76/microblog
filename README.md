@@ -51,3 +51,16 @@ $ flask/bin/pip install flask-babel
 $ flask/bin/pip install guess_language
 $ flask/bin/pip install flipflop
 $ flask/bin/pip install coverage
+
+#How to Find and Kill a Process
+1- Find what application/process is using the pro, type:
+
+>sudo netstat -lpn |grep :8080
+
+and press Enter.
+
+2- I have got the process Id, which is 6782, now this is the process that is using port 8080.
+
+3- Kill the process, type:kill 6782
+
+>kill 6782
